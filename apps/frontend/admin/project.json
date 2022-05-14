@@ -1,6 +1,5 @@
 {
   "projectType": "application",
-  "root": "apps/frontend/admin",
   "sourceRoot": "apps/frontend/admin/src",
   "prefix": "svvs",
   "targets": {
@@ -64,7 +63,10 @@
           "browserTarget": "frontend-admin:build:development"
         }
       },
-      "defaultConfiguration": "development"
+      "defaultConfiguration": "development",
+      "options": {
+        "proxyConfig": "apps/frontend/admin/proxy.conf.json"
+      }
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
@@ -90,5 +92,7 @@
       }
     }
   },
-  "tags": ["scope:frontend-admin"]
+  "tags": ["scope:frontend-admin",
+    "type:app"
+  ]
 }
