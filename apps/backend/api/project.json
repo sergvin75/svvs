@@ -48,5 +48,6 @@
       }
     }
   },
-  "tags": ["type:app"]
+  "tags": ["type:app",
+  "scope:backend-api"]
 }
